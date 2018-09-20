@@ -1,7 +1,9 @@
-<h1>ROSTER
+<h1>SHOW ALL PLAYERS
 <a href='/teams/{{teamId}}/players/new'>( new )</a></h1>
 <div>
     {{#each players}}
-        <div>Player Name: {{this.name}}, <a href='/teams/{{../teamId}}/players{{this._id}}'>Go to Player</a></div>
+        <div>Player Name: {{this.name}}
+            <a href='/teams/{{../teamId}}/players/{{this._id}}'>Go to Player</a>
+          </div>
     {{/each}}
 </div>

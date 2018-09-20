@@ -22,7 +22,7 @@ const bugs = new Player ({
 const toons = new Team ({
     name: "Toons",
     photoUrl: "TBD",
-    players: [mj],
+    players: [mj, bugs],
     games: []
 })
 

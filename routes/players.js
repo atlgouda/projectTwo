@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router({ mergeParams : true });
-const { Team } = require('../db/schema')
+const { Team, Player } = require('../db/schema')
 
 //INDEX, SHOW ALL
 router.get('/', (req, res) => {

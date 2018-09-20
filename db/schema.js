@@ -18,7 +18,7 @@ const GameSchema = new Schema ({
 const TeamSchema = new Schema ({
     name: String,
     photoUrl: String,
-    player: [PlayerSchema],
+    players: [PlayerSchema],
     games: [GameSchema]
 })
 
