@@ -9,7 +9,7 @@ var indexRouter = require('./routes');
 var teamsRouter = require('./routes/teams');
 var playersRouter = require('./routes/players')
 // var gamesRouter = require('./games')
-
+var bodyParser = require('body-parser')
 var app = express();
 const mongoose = require('mongoose');
 mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true })
@@ -18,6 +18,7 @@ mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true })
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 
+app.use(bodyParser.urlencoded({ extended: true }))
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));

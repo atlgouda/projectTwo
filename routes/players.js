@@ -17,6 +17,11 @@ router.get('/', (req, res) => {
 })
 
 //NEW, RENDER NEW FORM
+router.get('/new', (req, res) => {
+    res.render('players/new',  {
+        teamId: req.params.teamId,
+    })
+})
 
 //SHOW, SHOW ONE
 router.get('/:id', (req, res) => {
@@ -32,9 +37,20 @@ router.get('/:id', (req, res) => {
 //EDIT, RENDER EDIT FORM
 
 //CREATE
+router.post('/', (req, res) => {
+    Team.findById(req.params.teamId)
+    .then((team) => {
+        const newPlayer = new Player(req.body)
+        team.players.push(newPlayer)
+        return team.save()
+    })
+    .then(() => {
+        res.redirect(`/teams/${req.params.teamId}/players`)
+    })
+})
 
 //UPDATE
 
-//DELTE
+//DELETE
 
 module.exports = router;
