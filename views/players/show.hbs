@@ -1,0 +1,11 @@
+<h1>Showing One Player</h1>
+
+<div>Name:  {{player.name}}</div>
+<div>Position: {{player.position}}</div>
+<div>Age: {{player.age}}</div>
+
+<form action='/teams/{{teamId}}/players/{{player.id}}?_method=DELETE' method='POST'>
+    <input type="submit" value='Delete Player'>
+</form>
+<div><a href='/teams/{{teamId}}/players/{{player._id}}/edit'>Edit Player</a></div>
+<div><a href='/teams/{{teamId}}/players'>Go Back to Roster</a></div>
