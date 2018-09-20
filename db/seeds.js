@@ -5,6 +5,13 @@ const Schema = require('./schema')
 
 const { Team, Player, Game } = Schema
 
+const toons = new Team ({
+    name: "Toons",
+    photourl: "TBD",
+    players: [],
+    games: []
+})
+
 const monstars = new Team ({
     name: "Monstars",
     photoUrl: "TBD",
@@ -14,7 +21,7 @@ const monstars = new Team ({
 
 Team.deleteMany()
     .then(() => {
-        return Team.insertMany([monstars])
+        return Team.insertMany([monstars, toons])
     })
 
     .then(data => {
