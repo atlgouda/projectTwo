@@ -5,10 +5,24 @@ const Schema = require('./schema')
 
 const { Team, Player, Game } = Schema
 
+const mj = new Player ({
+    name: "Michael Jordan",
+    photoUrl: "TBD",
+    position: "SG",
+    age: "33"
+})
+
+const bugs = new Player ({
+    name: "Bugs Bunny",
+    photoUrl: "TBD",
+    position: "PG",
+    age: "10 in rabbit years"
+})
+
 const toons = new Team ({
     name: "Toons",
-    photourl: "TBD",
-    players: [],
+    photoUrl: "TBD",
+    players: [mj],
     games: []
 })
 
