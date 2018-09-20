@@ -1,0 +1,8 @@
+<h1>Showing One Team</h1>
+
+<div>Team Name:  {{team.name}}</div>
+<div>Logo: {{team.photoUrl}}</div>
+
+<form action='/teams/{{team._id}}?_method=DELETE' method='POST'>
+</form>
+<a href='/teams'>Go Back to Teams</a>

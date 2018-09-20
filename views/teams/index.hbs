@@ -1,0 +1,7 @@
+<h1>ALL TEAMS
+<a href='/teams/new'>( new )</a></h1>
+<div>
+    {{#each teams}}
+        <div> Team: {{this.name}}, <a href='/teams/{{this._id}}'>Go to team</a></div>
+    {{/each}}
+</div>
