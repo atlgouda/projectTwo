@@ -35,22 +35,22 @@ router.get('/:id', (req, res) => {
 })
 
 // EDIT, RENDER EDIT FORM
-router.get('/:id/edit', (req, res) => {
-    Team.findById(req.params.teamId)
-    .then((team) => {
-        const editedPlayer = new Player(req.body)
-        team.players.push(editedPlayer)
-        return team.save
-    })
-    .then(() => {
+// router.get('/:id/edit', (req, res) => {
+//     Team.findById(req.params.teamId)
+//     .then((team) => {
+//         const editedPlayer = new Player(req.body)
+//         team.players.push(editedPlayer)
+//         return team.save
+//     })
+//     .then(() => {
       
-        res.render('/players/edit', { 
-            teamId: req.params.teamId,
-            player: team.players.id(req.params.id),
-            team
-         })
-    })
-})
+//         res.render('/players/edit', { 
+//             teamId: req.params.teamId,
+//             player: team.players.id(req.params.id)
+            
+//          })
+//     })
+// })
 
 //CREATE
 router.post('/', (req, res) => {
