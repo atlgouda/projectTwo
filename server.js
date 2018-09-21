@@ -8,7 +8,7 @@ var methodOverride = require('method-override')
 var indexRouter = require('./routes');
 var teamsRouter = require('./routes/teams');
 var playersRouter = require('./routes/players')
-// var gamesRouter = require('./games')
+var gamesRouter = require('./games')
 var bodyParser = require('body-parser')
 var app = express();
 const mongoose = require('mongoose');
@@ -29,7 +29,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/teams', teamsRouter);
 app.use('/teams/:teamId/players', playersRouter)
-// app.use('/teams/:teamId/games', gamesRouter)
+app.use('/teams/:teamId/games', gamesRouter)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
