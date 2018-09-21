@@ -172,7 +172,7 @@ const monstars = new Team ({
 
 Team.deleteMany()
     .then(() => {
-        return Team.insertMany([monstars, tunes, gryffindor])
+        return Team.insertMany([monstars, tunes, gryffindor, united])
     })
 
     .then(data => {
