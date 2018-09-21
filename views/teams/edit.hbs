@@ -1,0 +1,7 @@
+<h1>Edit Team</h1>
+
+<form action='/teams/{{team._id}}?_method=PUT' method='POST'>
+    <div>Name<input type='text' name='name' value='{{team.name}}'></div>
+    <div>Logo<input type='text' name='imageUrl' value='{{team.imageUrl}}'></div>
+    <div><input type='submit' value='Update Team'></div>
+</form>
