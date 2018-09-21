@@ -13,7 +13,7 @@ const tunesGameOne = new Game ({
 })
 
 //PLAYERS SEEDED
-//tunes
+//tunes players
 const mj = new Player ({
     name: "Michael Jordan",
     photoUrl: "TBD",
@@ -48,7 +48,7 @@ const taz = new Player ({
     age: "14"
 })
 
-//monstars
+//monstars players
 const pound = new Player ({
     name: "Pound",
     photoUrl: "TBD",
@@ -79,7 +79,7 @@ const nawt = new Player ({
     position: "Center",
     age: "unknown"
 })
-//Gryffindor
+//Gryffindor players
 const harry = new Player ({
     name: "Harry Potter",
     photoUrl: "TBD",
@@ -110,7 +110,44 @@ const luna = new Player ({
     position: "Small Forward",
     age: "16"
 })
+//United players
+const josef = new Player ({
+    name: "Josef Martínez",
+    photoUrl: "TBD",
+    position: "Shooting Guard",
+    age: '25'
+})
+const miggy = new Player ({
+    name: "Miguel Almirón",
+    photoUrl: "TBD",
+    position: "Point Guard",
+    age: '24'
+})
+const tito = new Player ({
+    name: "Héctor 'Tito' Villalba",
+    photoUrl: "TBD",
+    position: "Center",
+    age: '24'
+})
+const parky = new Player ({
+    name: 'Michael Parkhurst',
+    photoUrl: "TBD",
+    position: 'Small Forward',
+    age: '34'
+})
+const lgp = new Player ({
+    name: 'Leandro González Pírez',
+    photoUrl: "TBD",
+    position: 'Power Forward',
+    age: '26'
+})
 //TEAMS SEEDED
+const united = new Team ({
+    name: "United",
+    city: "Atlanta",
+    players: [josef, miggy, tito, parky, lgp],
+    games: []
+})
 
 const gryffindor = new Team ({
     name: "Lions",
