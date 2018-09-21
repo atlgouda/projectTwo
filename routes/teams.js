@@ -44,7 +44,8 @@ router.put('/:id', (req, res) => {
   })
 })
 //DELETE
-router.delete(':/id', (req, res) => {
+router.delete('/:id', (req, res) => {
+ 
   Team.findByIdAndRemove(req.params.id)
   .then(() => {
     res.redirect('/teams')
