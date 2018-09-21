@@ -1,0 +1,11 @@
+<h1>SHOW ALL GAMES
+<a href='/teams/{{teamId}}/games/new'>( new )</a></h1>
+<div>
+    {{#each games}}
+        <div>Date: {{this.date}}
+            <a href='/teams/{{../teamId}}/games/{{this._id}}'>Go to Game</a>
+          </div>
+    {{/each}}
+</div>
+<br>
+<a href='/teams/{{team._id}}'>View Team Page</a>
