@@ -17,15 +17,35 @@ const tunesGameOne = new Game ({
 const mj = new Player ({
     name: "Michael Jordan",
     photoUrl: "TBD",
-    position: "SG",
+    position: "Shooting Guard",
     age: "33"
 })
 
 const bugs = new Player ({
     name: "Bugs Bunny",
     photoUrl: "TBD",
-    position: "PG",
+    position: "Point Guard",
     age: "10 in rabbit years"
+})
+const bill = new Player ({
+    name: "Bill Murray",
+    photoUrl: "TBD",
+    position: "Power Forward",
+    age: "43"
+})
+
+const lola = new Player ({
+    name: "Lola Bunny",
+    photoUrl: "TBD",
+    position: "Small Forward",
+    age: "9 in rabbit years"
+})
+
+const taz = new Player ({
+    name: "Tasmanian Devil",
+    photoUrl: "TBD",
+    position: "Center",
+    age: "14"
 })
 
 //monstars
@@ -71,8 +91,8 @@ const gryffindor = new Team ({
 
 const tunes = new Team ({
     name: "Tune Squad",
-    city: "Looney",
-    players: [mj, bugs],
+    city: "Tune Land",
+    players: [mj, bugs, bill, lola, taz],
     games: [tunesGameOne]
 })
 
@@ -85,7 +105,7 @@ const monstars = new Team ({
 
 Team.deleteMany()
     .then(() => {
-        return Team.insertMany([monstars, tunes])
+        return Team.insertMany([monstars, tunes, gryffindor])
     })
 
     .then(data => {
