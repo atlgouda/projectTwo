@@ -79,13 +79,43 @@ const nawt = new Player ({
     position: "Center",
     age: "unknown"
 })
-
+//Gryffindor
+const harry = new Player ({
+    name: "Harry Potter",
+    photoUrl: "TBD",
+    position: "Shooting Guard",
+    age: 16
+})
+const ron = new Player ({
+    name: "Ron Weasley",
+    photoUrl: "TBD",
+    position: "Power Forward",
+    age: 16
+})
+const hermoine = new Player ({
+    name: "Hermoine Granger",
+    photoUrl: "TBD",
+    position: "Point Guard",
+    age: "16"
+})
+const neville = new Player ({
+    name: "Neville Longbottom",
+    photoUrl: "TBD",
+    position: 'Center',
+    age: "16"
+})
+const luna = new Player ({
+    name: "Luna Lovegood",
+    photoUrl: "TBD",
+    position: "Small Forward",
+    age: "16"
+})
 //TEAMS SEEDED
 
 const gryffindor = new Team ({
     name: "Lions",
     city: "Gryffindor",
-    players: [],
+    players: [harry, ron, hermoine, neville, luna],
     games: []
 })
 
