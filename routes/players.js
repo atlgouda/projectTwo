@@ -34,19 +34,23 @@ router.get('/:id', (req, res) => {
     })
 })
 
-//EDIT, RENDER EDIT FORM
-// router.get('/:id/edit', (req, res) => {
-//     Team.findById(req.params.teamId)
-//     .then((team) => {
-//         const editedPlayer = new Player(req.body)
-//         team.players.push(editedPlayer)
-//         return team.save
-//     })
-//     .then(() => {
+// EDIT, RENDER EDIT FORM
+router.get('/:id/edit', (req, res) => {
+    Team.findById(req.params.teamId)
+    .then((team) => {
+        const editedPlayer = new Player(req.body)
+        team.players.push(editedPlayer)
+        return team.save
+    })
+    .then(() => {
       
-//         res.render('/players/edit')
-//     })
-// })
+        res.render('/players/edit', { 
+            teamId: req.params.teamId,
+            player: team.players.id(req.params.id),
+            team
+         })
+    })
+})
 
 //CREATE
 router.post('/', (req, res) => {
@@ -74,7 +78,6 @@ router.post('/', (req, res) => {
 router.delete('/:id', (req, res) => {
     Team.findById(req.params.teamId)
     .then((team) => {
-        console.log(team)
         team.players.remove(req.params.id)
         return team.save()
     })
