@@ -72,9 +72,17 @@ router.post('/', (req, res) => {
 
 //DELETE
 router.delete('/:id', (req, res) => {
-    Player.findByIdAndRemove(req.params.id)
+    Team.findById(req.params.teamId)
+    .then((team) => {
+        console.log(team)
+        team.players.remove(req.params.id)
+        return team.save()
+    })
     .then(() => {
-        res.redirect('players')
+        res.redirect(`/teams/${req.params.teamId}/players`)
+    })
+    .catch(error => {
+        console.log(error)
     })
 })
 
