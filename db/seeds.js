@@ -8,7 +8,7 @@ const { Team, Player, Game } = Schema
 const tunesGameOne = new Game ({
     date: "September 22nd",
     time: "noon",
-    opponent: "Monstars",
+    opponent: "Lions",
     location: "Mars"
 })
 
@@ -48,33 +48,33 @@ const taz = new Player ({
     age: "14"
 })
 
-//monstars players
-const pound = new Player ({
-    name: "Pound",
+//shout ots players
+const emmy = new Player ({
+    name: "Emmy Feinberg",
     photoUrl: "TBD",
     position: "Small Forward",
     age: "unknown"
 })
-const bang = new Player ({
-    name: "Bang",
+const chrisP = new Player ({
+    name: "Chris Pak",
     photoUrl: "TBD",
     position: "Power Forward",
     age: "unknown"
 })
-const bupkus = new Player ({
-    name: "Bupkus",
+const taylor = new Player ({
+    name: "Taylor Osbourne",
     photoUrl: "TBD",
     position: "Point Guard",
     age: "unknown"
 })
-const blanko = new Player ({
-    name: "Blanko",
+const chrisD = new Player ({
+    name: "Chris Ducote",
     photoUrl: "TBD",
     position: "Shooting Guard",
     age: "unknown"
 })
-const nawt = new Player ({
-    name: "Nawt",
+const andrew = new Player ({
+    name: "Andrew Bantug",
     photoUrl: "TBD",
     position: "Center",
     age: "unknown"
@@ -163,16 +163,16 @@ const tunes = new Team ({
     games: [tunesGameOne]
 })
 
-const monstars = new Team ({
-    name: "Monstars",
-    city: "Nerdluck",
-    players: [pound, bang, bupkus, blanko, nawt],
+const shoutouts = new Team ({
+    name: "Shout Outs",
+    city: "WDI",
+    players: [emmy, chrisP, taylor, chrisD, andrew],
     games: []
 })
 
 Team.deleteMany()
     .then(() => {
-        return Team.insertMany([monstars, tunes, gryffindor, united])
+        return Team.insertMany([shoutouts, tunes, gryffindor, united])
     })
 
     .then(data => {
