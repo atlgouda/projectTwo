@@ -16,34 +16,34 @@ const tunesGameOne = new Game ({
 //tunes players
 const mj = new Player ({
     name: "Michael Jordan",
-    photoUrl: "https://i.imgur.com/AQ9VhCG.jpg",
+    photoUrl: "https://i.imgur.com/AQ9VhCG.jpg?1",
     position: "Shooting Guard",
     age: "33"
 })
 
 const bugs = new Player ({
     name: "Bugs Bunny",
-    photoUrl: "https://i.imgur.com/ueb7iqw.jpg",
+    photoUrl: "https://i.imgur.com/ueb7iqw.jpg?1",
     position: "Point Guard",
     age: "10 in rabbit years"
 })
 const bill = new Player ({
     name: "Bill Murray",
-    photoUrl: "https://i.imgur.com/jVE925E.jpg",
+    photoUrl: "https://i.imgur.com/jVE925E.jpg?1",
     position: "Power Forward",
     age: "43"
 })
 
 const lola = new Player ({
     name: "Lola Bunny",
-    photoUrl: "https://i.imgur.com/6dMqgEq.jpg",
+    photoUrl: "https://i.imgur.com/6dMqgEq.jpg?1",
     position: "Small Forward",
     age: "9 in rabbit years"
 })
 
 const taz = new Player ({
     name: "Tasmanian Devil",
-    photoUrl: "https://i.imgur.com/GACDPpL.jpg",
+    photoUrl: "https://i.imgur.com/GACDPpL.jpg?1",
     position: "Center",
     age: "14"
 })
