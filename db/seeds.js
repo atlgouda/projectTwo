@@ -145,6 +145,7 @@ const lgp = new Player ({
 const united = new Team ({
     name: "United",
     city: "Atlanta",
+    image: "https://i.imgur.com/SXNSj29.png",
     players: [josef, miggy, tito, parky, lgp],
     games: []
 })
@@ -152,6 +153,7 @@ const united = new Team ({
 const gryffindor = new Team ({
     name: "Lions",
     city: "Gryffindor",
+    image: "https://i.imgur.com/0ThJaCB.png",
     players: [harry, ron, hermoine, neville, luna],
     games: []
 })
@@ -159,6 +161,7 @@ const gryffindor = new Team ({
 const tunes = new Team ({
     name: "Tune Squad",
     city: "Tune Land",
+    image: "https://i.imgur.com/M5LNYFA.png",
     players: [mj, bugs, bill, lola, taz],
     games: [tunesGameOne]
 })
@@ -166,6 +169,7 @@ const tunes = new Team ({
 const shoutouts = new Team ({
     name: "Shout Outs",
     city: "WDI",
+    image: "https://i.imgur.com/k0np0YL.png",
     players: [emmy, chrisP, taylor, chrisD, andrew],
     games: []
 })

@@ -2,6 +2,7 @@
 
 <div>Team Name:  {{team.name}}</div>
 <div>City: {{team.city}}</div><br>
+<div><img src="{{team.image}}"> </div>
 
 <form action='/teams/{{team._id}}?_method=DELETE' method='POST'>
     <input type="submit" value='Delete Team'>
