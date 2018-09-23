@@ -5,12 +5,14 @@ const PlayerSchema = new Schema ({
     name: String,
     photoUrl: String,
     position: String,
+    image: String,
     age: String
 })
 
 const GameSchema = new Schema ({
     date: String,
     time: String,
+    image: String,
     opponent: String,
     location: String
 })
