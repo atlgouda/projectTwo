@@ -1,5 +1,11 @@
 <h1 class="pageTitle">{{player.name}} Basketball Card</h1>
 
+<div class="center" id="cardButtonRow"><a class="button" href='/teams/{{teamId}}/players/{{player._id}}/edit'>Edit Player</a>
+<a class="button" href='/teams/{{teamId}}/players'>Go Back to Roster</a>
+<a action='/teams/{{teamId}}/players/{{player.id}}?_method=DELETE' method='POST'>
+    <input class="button is-danger" type="submit" value='Delete Player'>
+</a></div>
+
 
     <div id="playerCard"><img id="cardImage" src="{{player.photoUrl}}">
         <p id="playerNameText">{{player.name}}</p>
@@ -16,8 +22,5 @@
   </div>
 </div> --}}
 
-<form action='/teams/{{teamId}}/players/{{player.id}}?_method=DELETE' method='POST'>
-    <input type="submit" value='Delete Player'>
-</form><br>
-<div><a href='/teams/{{teamId}}/players/{{player._id}}/edit'>Edit Player</a></div>
-<div><a href='/teams/{{teamId}}/players'>Go Back to Roster</a></div>
+
+
