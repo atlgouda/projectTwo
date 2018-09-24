@@ -35,14 +35,15 @@ router.get('/:id', (req, res) => {
 })
 
 // EDIT, RENDER EDIT FORM
-router.get('/edit', (req, res) => {
+router.get('/:id/edit', (req, res) => {
     Team.findById(req.params.teamId)
     .then((team) => {
-            res.render('/players/edit', { 
-            teamId: req.params.teamId,
-            player: team.players
             
-         })
+            res.render('players/edit',  {
+            teamId: req.params.teamId,
+            playerId: req.params.id
+            
+            })
     })
 })
 
@@ -60,12 +61,17 @@ router.post('/', (req, res) => {
 })
 
 //UPDATE
-// router.put('/:id', (req, res) => {
-//     Team.findByIdAndUpdate(req.params.id, req.body)
-//     .then((team) => {
-//         res.redirect(`/teams/${req.params.teamId}/players`)
-//     })
-// })
+router.put('/:id', (req, res) => {
+    console.log()
+    Team.findById(req.params.teamId)
+    .then((team) => {
+        team.players.id(req.params.id).set(req.body)
+        return team.save()
+    })
+    .then(() => {
+        res.redirect(`/teams/${req.params.teamId}/players/${req.params.id}`)
+    })
+}) 
 
 
 //DELETE

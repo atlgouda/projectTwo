@@ -1,13 +1,28 @@
 body {
-  padding: 50px;
+  padding: 0px;
+  margin: 0px;
+  border: 10px solid green;
   font-family: 'Roboto', sans-serif;
   background-color: lightgray;
-}
 
+}
+header {
+  color: white;
+  border: 0px;
+  margin: 0;
+  padding: 0;
+  height: 100px;
+  background-color: darkslategray;
+}
 a {
   color: #00B7FF;
 }
-
+.teamImage {
+  max-height: 300px;
+}
+.locationImage{
+  max-height: 500px;
+}
 #cardImage {
   border: 2px solid gold;
   max-width: 50%;
@@ -24,6 +39,9 @@ a {
   background-color: white;
 }
 h1 {
+  border: 0;
+  padding: 0;
+  margin: 0;
   text-align: center;
 }
 .card {
@@ -39,4 +57,10 @@ h2 {
 }
 .card2 {
   background-color: white;
+}
+
+/* League Page */
+#teamLogoHome {
+  max-width: 15%;
+  max-height: 50px;
 }

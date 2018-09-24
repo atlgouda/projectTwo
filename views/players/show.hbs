@@ -6,21 +6,22 @@
 </figure>
 </div> --}}
 
-<div class='card'>
+{{!-- <div class='card' style="background-image: url:({{player.photoUrl}})"></div> --}}
 {{!-- <div class='cardBorder'> --}}
-    <img id="cardImage" src="{{player.photoUrl}}">
+    <div><img id="cardImage" src="{{player.photoUrl}}">
         <h2>{{player.name}}</h2></div>
+        {{!-- <h3>{{{player.position}}</h3> --}}
         {{!-- <div>Position: {{player.position}}</div>
         <div>Age: {{player.age}}</div> --}}
 {{!-- </div> --}}
 
-<div class="card2">
+{{!-- <div class="card2">
   <img src="{{player.photoUrl}}" style="width: 80%">
   <div class="container">
     <h4><b>{{player.name}}</b></h4> 
     <p>{{player.position}}</p> 
   </div>
-</div>
+</div> --}}
 
 <form action='/teams/{{teamId}}/players/{{player.id}}?_method=DELETE' method='POST'>
     <input type="submit" value='Delete Player'>

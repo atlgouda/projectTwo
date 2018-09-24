@@ -1,10 +1,11 @@
 <h1>Showing One Game</h1>
 
+<
 <div>Date:  {{game.date}}</div>
 <div>Time: {{game.time}}</div>
 <div>Opponent: {{game.opponent}}</div>
 <div>Location: {{game.location}}</div>
-<div><img src="{{game.image}}"</div>
+<div><img class="locationImage" src="{{game.image}}"</div>
 
 <form action='/teams/{{teamId}}/games/{{game.id}}?_method=DELETE' method='POST'>
     <input type="submit" value='Delete game'>
