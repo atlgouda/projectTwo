@@ -12,9 +12,14 @@ header {
   margin: 0;
   padding: 0;
   height: 100px;
-  background-color: darkslategray;
+  background-image: url("https://www.silverspringcommunity.ca/images/Image/headers/is505125162_basketball.jpg");
 }
-
+.pageTitle {
+  font-family: 'Chivo', sans-serif;
+  font-weight: bolder;
+  font-size: 30px;
+  text-align: center;
+}
 main{
   text-indent: 1px;
 }
@@ -40,30 +45,19 @@ main{
   padding: 10%;
   background-color: white;
 }
-h1 {
-  border: 0;
-  padding: 0;
-  margin: 0;
-  text-align: center;
-}
+
 .card {
   position: relative;
   max-width: 60%;
 }
-h2 {
-  position: absolute;
-  bottom: 0px;
-  max-width: 50%;
-  text-align: justify;
-  vertical-align: 0%;
-}
+
 .card2 {
   background-color: white;
 }
 
 /* League Page */
 #teamLogoHome {
-  max-width: 15%;
+  max-width: 20%;
   max-height: 100px;
 }
 #teamNameLogo {

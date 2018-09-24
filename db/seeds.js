@@ -220,6 +220,14 @@ const lgp = new Player ({
     age: '26'
 })
 //TEAMS SEEDED
+const shoutouts = new Team ({
+    name: "Shout Outs",
+    city: "WDI",
+    image: "https://i.imgur.com/k0np0YL.png",
+    players: [emmy, chrisP, taylor, chrisD, andrew],
+    games: [shoutOutsGameOne, shoutOutsGameTwo, shoutOutsGameThree]
+})
+
 const united = new Team ({
     name: "United",
     city: "Atlanta",
@@ -244,17 +252,10 @@ const tunes = new Team ({
     games: [tunesGameOne, tunesGameTwo, tunesGameThree]
 })
 
-const shoutouts = new Team ({
-    name: "Shout Outs",
-    city: "WDI",
-    image: "https://i.imgur.com/k0np0YL.png",
-    players: [emmy, chrisP, taylor, chrisD, andrew],
-    games: [shoutOutsGameOne, shoutOutsGameTwo, shoutOutsGameThree]
-})
 
 Team.deleteMany()
     .then(() => {
-        return Team.insertMany([shoutouts, tunes, gryffindor, united])
+        return Team.insertMany([tunes, gryffindor, united, shoutouts])
     })
 
     .then(data => {
