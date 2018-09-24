@@ -10,7 +10,7 @@ const unitedGameThree = new Game ({
     time: "8 PM",
     opponent: "Gryffindor",
     location: "Boston Garden",
-    image: "https://i.imgur.com/zCiONvK.jpg",
+    image: "https://i.imgur.com/zCiONvK.jpg"
 })
 const gryffindorGameThree= new Game ({
     date: "October 2nd",
@@ -160,31 +160,31 @@ const andrew = new Player ({
 //Gryffindor players
 const harry = new Player ({
     name: "Harry Potter",
-    photoUrl: "TBD",
+    photoUrl: "https://i.imgur.com/lGQ0kx9.jpg?1",
     position: "Shooting Guard",
     age: 16
 })
 const ron = new Player ({
     name: "Ron Weasley",
-    photoUrl: "TBD",
+    photoUrl: "https://i.imgur.com/7FWQayY.jpg?1",
     position: "Power Forward",
     age: 16
 })
 const hermoine = new Player ({
     name: "Hermoine Granger",
-    photoUrl: "TBD",
+    photoUrl: "https://i.imgur.com/GWWXnf2.jpg",
     position: "Point Guard",
     age: "16"
 })
 const neville = new Player ({
     name: "Neville Longbottom",
-    photoUrl: "TBD",
+    photoUrl: "https://i.imgur.com/CNQuPZW.jpg?1",
     position: 'Center',
     age: "16"
 })
 const luna = new Player ({
     name: "Luna Lovegood",
-    photoUrl: "TBD",
+    photoUrl: "https://i.imgur.com/6aQmIY1.jpg",
     position: "Small Forward",
     age: "16"
 })

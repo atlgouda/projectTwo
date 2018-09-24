@@ -11,6 +11,7 @@ a {
 #cardImage {
   border: 2px solid gold;
   max-width: 50%;
+  max-height: 700px;
   padding: 5% 5% 15% 5%;
   margin: 10%;
   background-color: white;
