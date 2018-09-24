@@ -34,13 +34,33 @@ header {
 .locationImage{
   max-height: 500px;
 }
+#playerNameText {
+  font-weight: bolder;
+  font-size: 1rem;
+  text-align: center;
+}
+#playerPositionText {
+  text-align: center;
+  font-size: .8rem;
+}
+#ageText {
+  text-align: center;
+  font-size: .8rem;
+}
+#playerCard {
+  border: 2px solid gold;
+  padding: 2% 2% 2% 2%;
+  margin: 2%;
+  background-color: white;
+  display: block;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
 #cardImage {
   border: 2px solid gold;
-  max-width: 50%;
+  width: 90%;
   max-height: 700px;
-  padding: 5% 5% 15% 5%;
-  margin: 10%;
-  background-color: white;
   display: block;
   margin-left: auto;
   margin-right: auto;

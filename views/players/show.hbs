@@ -1,12 +1,11 @@
-<h1 class="pageTitle">{{player.name}}</h1>
+<h1 class="pageTitle">{{player.name}} Basketball Card</h1>
 
 
-    <div><img id="cardImage" src="{{player.photoUrl}}">
+    <div id="playerCard"><img id="cardImage" src="{{player.photoUrl}}">
+        <p id="playerNameText">{{player.name}}</p>
+        <p id="playerPositionText">{{player.position}}</p>
+        <p id="ageText">Age: {{player.age}}</p>
         </div>
-        <p>{{player.name}}</p>
-        <p>{{player.position}}</p>
-        <div>Position: {{player.position}}</div>
-        <div>Age: {{player.age}}</div>
 {{!-- </div> --}}
 
 {{!-- <div class="card2">
