@@ -62,7 +62,6 @@ router.post('/', (req, res) => {
 
 //UPDATE
 router.put('/:id', (req, res) => {
-    console.log()
     Team.findById(req.params.teamId)
     .then((team) => {
         team.players.id(req.params.id).set(req.body)

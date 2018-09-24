@@ -4,10 +4,11 @@
 <div>Team Name:  {{team.name}}</div>
 <div>City: {{team.city}}</div><br>
 
+
+<div><a href='/teams/{{team._id}}/edit'>Edit Team</a>
+<a href='/teams'>Go Back to Teams</a>
+<a href='/teams/{{team._id}}/players'>View Roster</a>
+<a href='/teams/{{team._id}}/games'>View Schedule</a></div><br>
 <form action='/teams/{{team._id}}?_method=DELETE' method='POST'>
     <input type="submit" value='Delete Team'>
 </form><br>
-<div><a href='/teams/{{team._id}}/edit'>Edit Team</a></div><br>
-<a href='/teams'>Go Back to Teams</a><br><br>
-<a href='/teams/{{team._id}}/players'>View Roster</a><br><br>
-<a href='/teams/{{team._id}}/games'>View Schedule</a>

@@ -1,9 +1,16 @@
 <h1>ALL TEAMS
 <a href='/teams/new'>( new )</a></h1>
 <div>
+
     {{#each teams}}
-        <div> {{this.city}} {{this.name}}<span><image id="teamLogoHome" src="{{this.image}}"></span>
-            
-            <a href='/teams/{{this._id}}'><button class="button">Go to team</button></a></div>
-    {{/each}}
+      <div id='teamNameLogo'>
+          <span><image id="teamLogoHome" src="{{this.image}}"></span><br>
+            <a href='/teams/{{this._id}}'>{{this.city}} {{this.name}}<br>
+            </a>
+        
+    </div>
+            {{/each}}
+    
+            {{!-- <div><a href='/teams/{{this._id}}'><button class="button">Go to team</button></a></div> --}}
+    
 </div>

@@ -1,7 +1,7 @@
 body {
   padding: 0px;
   margin: 0px;
-  border: 10px solid green;
+  border: 0;
   font-family: 'Roboto', sans-serif;
   background-color: lightgray;
 
@@ -14,9 +14,11 @@ header {
   height: 100px;
   background-color: darkslategray;
 }
-a {
-  color: #00B7FF;
+
+main{
+  text-indent: 1px;
 }
+
 .teamImage {
   max-height: 300px;
 }
@@ -62,5 +64,8 @@ h2 {
 /* League Page */
 #teamLogoHome {
   max-width: 15%;
-  max-height: 50px;
+  max-height: 100px;
+}
+#teamNameLogo {
+  text-align: center;
 }
