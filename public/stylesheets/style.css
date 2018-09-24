@@ -58,6 +58,13 @@ header {
 .card2 {
   background-color: white;
 }
+/* Roster Page */
+#rosterNames {
+  text-align: center;
+}
+#rosterName {
+  font-size: 30px;
+}
 /* Showing One team */
 #teamImage {
   max-height: 200px;

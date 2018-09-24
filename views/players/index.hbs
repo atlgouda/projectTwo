@@ -1,12 +1,14 @@
-<h1 class="pageTitle">Team Roster
-<a href='/teams/{{teamId}}/players/new'>( new )</a></h1>
+<h1 class="pageTitle">Team Roster<br>
+<a class="button is-success" id="addNewPlayerButton" href='/teams/{{teamId}}/players/new'>Add New Player</a>
+<a class="button is-success" id="backViewTeam" href='/teams/{{team._id}}'>Back to Team Page</a>
+</h1>
 <div>
     {{#each players}}
-        <div>{{this.name}}
-            <a href='/teams/{{../teamId}}/players/{{this._id}}'>Go to Player</a>
+        <div id="rosterNames">
+            <a id="rosterName" href='/teams/{{../teamId}}/players/{{this._id}}'>{{this.name}}</a>
           </div>
     {{/each}}
 </div>
 <br>
-<a href='/teams/{{team._id}}'>View Team Page</a>
+
 
