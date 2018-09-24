@@ -4,6 +4,7 @@ body {
   border: 0;
   font-family: 'Roboto', sans-serif;
   background-color: lightgray;
+  min-height: 100vh;
 
 }
 header {
@@ -20,13 +21,16 @@ header {
   font-size: 30px;
   text-align: center;
 }
-main{
-  text-indent: 1px;
+
+.allTeams{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
-.teamImage {
-  max-height: 300px;
-}
+
+
 .locationImage{
   max-height: 500px;
 }
@@ -54,11 +58,24 @@ main{
 .card2 {
   background-color: white;
 }
+/* Showing One team */
+#teamImage {
+  max-height: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 50%;
 
+}
 /* League Page */
+
+#addNewTeamButton {
+  justify-content: center;
+  text-align: center;
+}
 #teamLogoHome {
-  max-width: 20%;
-  max-height: 100px;
+  max-width: 175px;
+  max-height: 175px;
 }
 #teamNameLogo {
   text-align: center;
