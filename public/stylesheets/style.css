@@ -1,6 +1,6 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   background-color: lightgray;
 }
 
@@ -8,3 +8,34 @@ a {
   color: #00B7FF;
 }
 
+#cardImage {
+  border: 2px solid gold;
+  max-width: 50%;
+  padding: 5% 5% 15% 5%;
+  margin: 10%;
+  background-color: white;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cardBorder {
+  padding: 10%;
+  background-color: white;
+}
+h1 {
+  text-align: center;
+}
+.card {
+  position: relative;
+  max-width: 60%;
+}
+h2 {
+  position: absolute;
+  bottom: 0px;
+  max-width: 50%;
+  text-align: justify;
+  vertical-align: 0%;
+}
+.card2 {
+  background-color: white;
+}

@@ -5,11 +5,77 @@ const Schema = require('./schema')
 
 const { Team, Player, Game } = Schema
 //GAMES SEEDED
+const unitedGameThree = new Game ({
+    date: "October 2nd",
+    time: "8 PM",
+    opponent: "Gryffindor",
+    location: "Boston Garden"
+})
+const gryffindorGameThree= new Game ({
+    date: "October 2nd",
+    time: "8 PM",
+    opponent: "United",
+    location: "Boston Garden"
+})
+const shoutOutsGameThree = new Game ({
+    date: "October 1st",
+    time: "7 PM",
+    opponent: "Tune Squad",
+    location: "White House"
+})
+const tunesGameThree= new Game ({
+    date: "October 1st",
+    time: "7 PM",
+    opponent: "Shout Outs",
+    location: "White House"
+})
+const shoutOutsGameTwo = new Game ({
+    date: "September 29th",
+    time: "5 PM",
+    opponent: "Gryffindor",
+    location: "Hogwarts"
+})
+const gryffindorGameTwo = new Game ({
+    date: "Septmeber 29th",
+    time: "5 PM",
+    opponent: "Shout Outs",
+    location: "Hogwarts"
+})
+const unitedGameTwo = new Game ({
+    date: "September 28th",
+    time: "3 PM",
+    opponent: "Tune Squad",
+    location: "Madison Square Garden"
+})
+const tunesGameTwo = new Game ({
+    date: "September 28th",
+    time: "3 PM",
+    opponent: "United",
+    location: "Madison Square Garden"
+})
+const shoutOutsGameOne = new Game ({
+    date: "September 25th",
+    time: "7 PM",
+    opponent: "United",
+    location: "Rucker Park"
+})
+const unitedGameOne = new Game ({
+    date: "September 25th",
+    time: "7 PM",
+    opponent: "Shout Outs",
+    location: "Rucker Park"
+})
+const gryffindorGameOne = new Game ({
+    date: "September 25th",
+    time: "Noon",
+    opponent: "Tune Squad",
+    location: "Space Jam Arena"
+})
 const tunesGameOne = new Game ({
-    date: "September 22nd",
-    time: "noon",
-    opponent: "Lions",
-    location: "Mars"
+    date: "September 25th",
+    time: "Noon",
+    opponent: "Gryffindor",
+    location: "Space Jam Arena"
 })
 
 //PLAYERS SEEDED
@@ -147,15 +213,15 @@ const united = new Team ({
     city: "Atlanta",
     image: "https://i.imgur.com/SXNSj29.png",
     players: [josef, miggy, tito, parky, lgp],
-    games: []
+    games: [unitedGameOne, unitedGameTwo, unitedGameThree]
 })
 
 const gryffindor = new Team ({
-    name: "Lions",
-    city: "Gryffindor",
+    name: "Gryffindor",
+    city: "House",
     image: "https://i.imgur.com/0ThJaCB.png",
     players: [harry, ron, hermoine, neville, luna],
-    games: []
+    games: [gryffindorGameOne, gryffindorGameTwo, gryffindorGameThree]
 })
 
 const tunes = new Team ({
@@ -163,7 +229,7 @@ const tunes = new Team ({
     city: "Tune Land",
     image: "https://i.imgur.com/M5LNYFA.png",
     players: [mj, bugs, bill, lola, taz],
-    games: [tunesGameOne]
+    games: [tunesGameOne, tunesGameTwo, tunesGameThree]
 })
 
 const shoutouts = new Team ({
@@ -171,7 +237,7 @@ const shoutouts = new Team ({
     city: "WDI",
     image: "https://i.imgur.com/k0np0YL.png",
     players: [emmy, chrisP, taylor, chrisD, andrew],
-    games: []
+    games: [shoutOutsGameOne, shoutOutsGameTwo, shoutOutsGameThree]
 })
 
 Team.deleteMany()

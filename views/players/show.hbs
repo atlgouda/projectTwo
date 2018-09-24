@@ -1,9 +1,26 @@
 <h1>Showing One Player</h1>
 
-<div><img src="{{player.photoUrl}}"> </div>
-<div>Name:  {{player.name}}</div>
-<div>Position: {{player.position}}</div>
-<div>Age: {{player.age}}</div>
+{{!-- <div class="box">
+<figure class="image is-3by4">
+  <img id="bulmaCard" src="{{player.photoUrl}}">
+</figure>
+</div> --}}
+
+<div class='card'>
+{{!-- <div class='cardBorder'> --}}
+    <img id="cardImage" src="{{player.photoUrl}}">
+        <h2>{{player.name}}</h2></div>
+        {{!-- <div>Position: {{player.position}}</div>
+        <div>Age: {{player.age}}</div> --}}
+{{!-- </div> --}}
+
+<div class="card2">
+  <img src="{{player.photoUrl}}" style="width: 80%">
+  <div class="container">
+    <h4><b>{{player.name}}</b></h4> 
+    <p>{{player.position}}</p> 
+  </div>
+</div>
 
 <form action='/teams/{{teamId}}/players/{{player.id}}?_method=DELETE' method='POST'>
     <input type="submit" value='Delete Player'>
