@@ -9,73 +9,85 @@ const unitedGameThree = new Game ({
     date: "October 2nd",
     time: "8 PM",
     opponent: "Gryffindor",
-    location: "Boston Garden"
+    location: "Boston Garden",
+    image: "https://i.imgur.com/zCiONvK.jpg",
 })
 const gryffindorGameThree= new Game ({
     date: "October 2nd",
     time: "8 PM",
     opponent: "United",
-    location: "Boston Garden"
+    location: "Boston Garden",
+    image: "https://i.imgur.com/zCiONvK.jpg"
 })
 const shoutOutsGameThree = new Game ({
     date: "October 1st",
     time: "7 PM",
     opponent: "Tune Squad",
-    location: "White House"
+    location: "White House",
+    image: "https://i.imgur.com/TcQ7uBl.jpg"
 })
 const tunesGameThree= new Game ({
     date: "October 1st",
     time: "7 PM",
     opponent: "Shout Outs",
-    location: "White House"
+    location: "White House",
+    image: "https://i.imgur.com/TcQ7uBl.jpg"
 })
 const shoutOutsGameTwo = new Game ({
     date: "September 29th",
     time: "5 PM",
     opponent: "Gryffindor",
-    location: "Hogwarts"
+    location: "Hogwarts",
+    image: "https://i.imgur.com/cpqQYxA.jpg"
 })
 const gryffindorGameTwo = new Game ({
     date: "Septmeber 29th",
     time: "5 PM",
     opponent: "Shout Outs",
-    location: "Hogwarts"
+    location: "Hogwarts",
+    image: "https://i.imgur.com/cpqQYxA.jpg",
 })
 const unitedGameTwo = new Game ({
     date: "September 28th",
     time: "3 PM",
     opponent: "Tune Squad",
-    location: "Madison Square Garden"
+    location: "Madison Square Garden",
+    image: "https://i.imgur.com/q27xh1T.jpg"
 })
 const tunesGameTwo = new Game ({
     date: "September 28th",
     time: "3 PM",
     opponent: "United",
-    location: "Madison Square Garden"
+    location: "Madison Square Garden",
+    image: "https://i.imgur.com/q27xh1T.jpg"
 })
 const shoutOutsGameOne = new Game ({
     date: "September 25th",
     time: "7 PM",
     opponent: "United",
-    location: "Rucker Park"
+    location: "Rucker Park",
+    image: "https://i.imgur.com/862n6dX.jpg"
 })
 const unitedGameOne = new Game ({
     date: "September 25th",
     time: "7 PM",
     opponent: "Shout Outs",
-    location: "Rucker Park"
+    location: "Rucker Park",
+    image: "https://i.imgur.com/862n6dX.jpg"
 })
 const gryffindorGameOne = new Game ({
     date: "September 25th",
     time: "Noon",
     opponent: "Tune Squad",
-    location: "Space Jam Arena"
+    location: "Space Jam Arena",
+    image: "https://i.imgur.com/M3L2ooJ.jpg"
 })
 const tunesGameOne = new Game ({
     date: "September 25th",
     time: "Noon",
     opponent: "Gryffindor",
-    location: "Space Jam Arena"
+    location: "Space Jam Arena",
+    image: "https://i.imgur.com/M3L2ooJ.jpg"
 })
 
 //PLAYERS SEEDED
