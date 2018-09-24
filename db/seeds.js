@@ -191,31 +191,31 @@ const luna = new Player ({
 //United players
 const josef = new Player ({
     name: "Josef Martínez",
-    photoUrl: "TBD",
+    photoUrl: "https://i.imgur.com/iybvDQC.jpg?1",
     position: "Shooting Guard",
     age: '25'
 })
 const miggy = new Player ({
     name: "Miguel Almirón",
-    photoUrl: "TBD",
+    photoUrl: "https://i.imgur.com/xMDR7fZ.jpg?1",
     position: "Point Guard",
     age: '24'
 })
 const tito = new Player ({
     name: "Héctor 'Tito' Villalba",
-    photoUrl: "TBD",
+    photoUrl: "https://i.imgur.com/adAw2kN.jpg?1",
     position: "Center",
     age: '24'
 })
 const parky = new Player ({
     name: 'Michael Parkhurst',
-    photoUrl: "TBD",
+    photoUrl: "https://i.imgur.com/y811Kmk.jpg?1",
     position: 'Small Forward',
     age: '34'
 })
 const lgp = new Player ({
     name: 'Leandro González Pírez',
-    photoUrl: "TBD",
+    photoUrl: "https://i.imgur.com/6hnXUps.jpg?1",
     position: 'Power Forward',
     age: '26'
 })
