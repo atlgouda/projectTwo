@@ -34,13 +34,18 @@ header {
 .locationImage{
   max-height: 500px;
 }
+/* New Team Page */
+#newTeamForms {
+  margin-left: 15%;
+  margin-right: 15%;
+}
 /* Edit Team Page */
 
-#editTeamName, #editTeamLogo {
+/* #editTeamName, #editTeamLogo {
   height: 30px;
   margin-left: 10px;
-}
-#editTeamCity {
+} */
+.editTeamInput {
   height: 35px;
   margin-left: 10px;
 }
@@ -129,8 +134,9 @@ header {
 
 }
 #teamDescription {
+  text-align: center;
   margin-left: 8%;
-  margin-right: 6%;
+  margin-right: 8%;
 }
 #buttonRow {
   display: inline-block;
