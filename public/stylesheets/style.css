@@ -69,6 +69,17 @@ body {
   opacity: 0.7;
   border: 8px solid white;
 }
+/* New Game Page */
+#newGameForms {
+  text-align: center;
+}
+/* New Player Page */
+#newPlayerForms {
+  text-align: center;
+  font-size: 20px;
+  /* margin-left: 35%; */
+
+}
 
 /* New Team Page */
 #newTeamForms {

@@ -1,9 +1,12 @@
 <h1 class="pageTitle">New Game</h1>
 
+<div id="newGameForms">
 <form action='/teams/{{teamId}}/games' method='POST'>
-    <div>Date<input type='text' name='date'></div>
-    <div>Time<input type='text' name='time'></div>
-    <div>Opponent<input type='text' name='opponent'></div>
-    <div>Location<input type='text' name='location'></div>
-    <div><input type='submit' value='Create New Game'></div>
+    <div class="newGameInput">Date<input type='text' name='date'></div><br>
+    <div class="newGameInput">Time<input type='text' name='time'></div><br>
+    <div class="newGameInput">Opponent<input type='text' name='opponent'></div><br>
+    <div class="newGameInput">Location<input type='text' name='location'></div><br>
+    <div><input class="button is-link" type='submit' value='Create New Game'></div><br>
+     <a class="button" href='/teams'>CANCEL</a></div>
 </form>
+</div>
