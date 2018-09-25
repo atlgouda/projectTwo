@@ -129,33 +129,28 @@ const taz = new Player ({
 //shout outs players
 const emmy = new Player ({
     name: "Emmy Feinberg",
-    photoUrl: "TBD",
+    photoUrl: "https://i.imgur.com/8cK9vly.png",
     position: "Small Forward",
-    age: "unknown"
 })
 const chrisP = new Player ({
     name: "Chris Pak",
-    photoUrl: "TBD",
+    photoUrl: "https://i.imgur.com/fydfXfX.png",
     position: "Power Forward",
-    age: "unknown"
 })
 const taylor = new Player ({
     name: "Taylor Osbourne",
-    photoUrl: "TBD",
+    photoUrl: "https://i.imgur.com/ul4PNih.png",
     position: "Point Guard",
-    age: "unknown"
 })
 const chrisD = new Player ({
     name: "Chris Ducote",
-    photoUrl: "TBD",
+    photoUrl: "https://i.imgur.com/txljzQN.png",
     position: "Shooting Guard",
-    age: "unknown"
 })
 const andrew = new Player ({
     name: "Andrew Bantug",
-    photoUrl: "TBD",
+    photoUrl: "https://i.imgur.com/g9VLOxl.png",
     position: "Center",
-    age: "unknown"
 })
 //Gryffindor players
 const harry = new Player ({
