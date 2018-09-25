@@ -1,6 +1,10 @@
 <h1 class="pageTitle">Edit Team</h1>
+<div id="editTeamForms">
 <form action='/teams/{{team._id}}?_method=PUT' method='POST'>
-    <div>Name<input type='text' name='name' value='{{team.name}}'></div>
-    <div>City<input type='text' name='city' value='{{team.city}}'></div>
-    <div><input type='submit' value='Update Team'></div>
+    <div>City<input id="editTeamCity" type='text' name='city' value='{{team.city}}'></div><br>
+    <div>Name<input id="editTeamName" type='text' name='name' value='{{team.name}}'></div><br>
+    <div>Logo Image URL<input id="editTeamLogo" type='text' name='image' value='{{team.image}}'></div><br>
+    <div>Team Description<input id="editTeamDescription" type='text' name='description' value='{{team.description}}'></div><br>
+    <div><input class="button is-link" type='submit' value='Update Team'></div>
 </form>
+</div>

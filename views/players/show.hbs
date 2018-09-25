@@ -2,9 +2,9 @@
 
 <div class="center" id="cardButtonRow"><a class="button" href='/teams/{{teamId}}/players/{{player._id}}/edit'>Edit Player</a>
 <a class="button" href='/teams/{{teamId}}/players'>Go Back to Roster</a>
-<a action='/teams/{{teamId}}/players/{{player.id}}?_method=DELETE' method='POST'>
+<form action='/teams/{{teamId}}/players/{{player.id}}?_method=DELETE' method='POST'>
     <input class="button is-danger" type="submit" value='Delete Player'>
-</a></div>
+</form></div>
 
 
     <div id="playerCard"><img id="cardImage" src="{{player.photoUrl}}">

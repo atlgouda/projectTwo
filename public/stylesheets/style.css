@@ -34,6 +34,20 @@ header {
 .locationImage{
   max-height: 500px;
 }
+/* Edit Team Page */
+
+#editTeamName, #editTeamLogo {
+  height: 30px;
+  margin-left: 10px;
+}
+#editTeamCity {
+  height: 35px;
+  margin-left: 10px;
+}
+#editTeamForms {
+  text-align: center;
+  font-size: 25px;
+}
 /* Show Schedule */
 #gameDate {
   height: 80px;
@@ -114,9 +128,9 @@ header {
   max-width: 50%;
 
 }
-#unitedTeamDescription {
-  margin-left: 10%;
-  margin-right: 10%;
+#teamDescription {
+  margin-left: 8%;
+  margin-right: 6%;
 }
 #buttonRow {
   display: inline-block;
