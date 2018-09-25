@@ -1,8 +1,10 @@
 <h1 class="pageTitle">Edit Player</h1>
-
+<div id="editPlayerForms">
 <form action='/teams/{{teamId}}/players/{{playerId}}?_method=PUT' method='POST'>
-    <div>Name<input type='text' name='name' value='{{this.name}}'></div>
-    <div>Position<input type='text' name='position' value='{{this.position}}'></div>
-    <div>Photo URL<input type='text' name='photoUrl' value='{{this.photoUrl}}'></div>
-    <div><input type='submit' value='Update Player'></div>
+    <div class="editPlayerInput">Name<input type='text' name='name' value='{{this.name}}'></div>
+    <div class="editPlayerInput">Position<input type='text' name='position' value='{{this.position}}'></div>
+    <div class="editPlayerInput">Photo URL<input type='text' name='photoUrl' value='{{this.photoUrl}}'></div>
+    <div class="editPlayerInput"><input class="button is-primary" type='submit' value='Update Player'></div>
+    <a class="button" href='/teams/{{teamId}}/players'>CANCEL</a></div>
 </form>
+</div>

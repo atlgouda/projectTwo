@@ -35,7 +35,17 @@ router.get('/:id', (req, res) => {
 })
 
 //EDIT, RENDER EDIT FORM
-
+router.get('/:id/edit', (req, res) => {
+    Team.findById(req.params.teamId)
+    .then((team) => {
+            
+            res.render('games/edit',  {
+            teamId: req.params.teamId,
+            gameId: req.params.id
+            
+            })
+    })
+})
 //CREATE
 router.post('/', (req, res) => {
     Team.findById(req.params.teamId)
@@ -50,14 +60,22 @@ router.post('/', (req, res) => {
 })
 
 //UPDATE
-
+router.put('/:id', (req, res) => {
+    Team.findById(req.params.teamId)
+    .then((team) => {
+        team.games.id(req.params.id).set(req.body)
+        return team.save()
+    })
+    .then(() => {
+        res.redirect(`/teams/${req.params.teamId}/games/${req.params.id}`)
+    })
+}) 
 
 
 //DELETE
 router.delete('/:id', (req, res) => {
     Team.findById(req.params.teamId)
     .then((team) => {
-        console.log(team)
         team.games.remove(req.params.id)
         return team.save()
     })

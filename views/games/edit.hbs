@@ -1,0 +1,10 @@
+<h1 class="pageTitle">Edit Game</h1>
+
+<form action='/teams/{{teamId}}/games/{{gameId}}?_method=PUT' method='POST'>
+    <div>Date<input type='text' name='date' value='{{this.date}}'></div>
+    <div>Time<input type='text' name='time' value='{{this.time}}'></div>
+    <div>Opponent<input type='text' name='opponent' value='{{this.opponent}}'></div>
+    <div>Location<input type='text' name='location' value='{{this.location}}'></div>
+    <div>Image URL<input type='text' name='image' value='{{this.image}}'></div>
+    <div><input type='submit' value='Update Player'></div>
+</form>
