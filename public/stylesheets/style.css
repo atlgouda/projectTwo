@@ -4,7 +4,7 @@ body {
   border: 0;
   font-family: 'Roboto', sans-serif;
   background-color: lightgray;
-  min-height: 100vh;
+  min-height: 105vh;
 
 }
 header {
@@ -34,6 +34,17 @@ header {
 .locationImage{
   max-height: 500px;
 }
+/* Show Schedule */
+#gameDate {
+  height: 80px;
+ text-align: center;
+ font-size: 25px;
+ display: flex;
+ flex-wrap: wrap;
+ margin-left: 5%;
+ margin-right: 5%;
+
+}
 /* One Player */
 #cardButtonRow {
   display: inline-block;
@@ -62,6 +73,7 @@ header {
   background-color: white;
   display: block;
   width: 50%;
+  max-width: 300px;
   margin-left: auto;
   margin-right: auto;
 }

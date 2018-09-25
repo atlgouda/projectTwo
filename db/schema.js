@@ -20,6 +20,7 @@ const GameSchema = new Schema ({
 const TeamSchema = new Schema ({
     name: String,
     city: String,
+    description: String,
     image: String,
     players: [PlayerSchema],
     games: [GameSchema]
