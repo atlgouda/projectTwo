@@ -34,6 +34,14 @@ header {
 .locationImage{
   max-height: 500px;
 }
+/* Landng Page */
+#landingPageListItem {
+  text-indent: 15%;
+}
+#landingPageList {
+  font-size: 20px;
+}
+
 /* New Team Page */
 #newTeamForms {
   margin-left: 15%;
