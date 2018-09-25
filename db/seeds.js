@@ -220,7 +220,8 @@ const shoutouts = new Team ({
     city: "WDI",
     image: "https://i.imgur.com/k0np0YL.png",
     players: [emmy, chrisP, taylor, chrisD, andrew],
-    games: [shoutOutsGameOne, shoutOutsGameTwo, shoutOutsGameThree]
+    games: [shoutOutsGameOne, shoutOutsGameTwo, shoutOutsGameThree],
+    description:  "A lot of help from the back table, but here are the starting 5 for my Team WDI Shout Outs (at the time of seeding this data!)"
 })
 
 const united = new Team ({
@@ -228,7 +229,8 @@ const united = new Team ({
     city: "Atlanta",
     image: "https://i.imgur.com/SXNSj29.png",
     players: [josef, miggy, tito, parky, lgp],
-    games: [unitedGameOne, unitedGameTwo, unitedGameThree]
+    games: [unitedGameOne, unitedGameTwo, unitedGameThree],
+    description: "Atlanta United FC joined Major League Soccer in the 2017 season and have surpassed expectaions of a typical expansion team. Currently, in their 2018 season, they are looking to take home both the Supporter's Shield and MLS Cup.  Next up?  Challenging other teams in an offseason basketball league."
 })
 
 const gryffindor = new Team ({
@@ -236,7 +238,8 @@ const gryffindor = new Team ({
     city: "House",
     image: "https://i.imgur.com/0ThJaCB.png",
     players: [harry, ron, hermoine, neville, luna],
-    games: [gryffindorGameOne, gryffindorGameTwo, gryffindorGameThree]
+    games: [gryffindorGameOne, gryffindorGameTwo, gryffindorGameThree],
+    description: "After winnng the House Cup, Dumbledore has convinced the Gryffindor students to participate in a basketball league before O.W.L.s begin"
 })
 
 const tunes = new Team ({
