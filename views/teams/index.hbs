@@ -4,8 +4,9 @@
 
     {{#each teams}}
       <div id='teamNameLogo'>
+          <a href='/teams/{{this._id}}'>
           <span><image id="teamLogoHome" src="{{this.image}}"></span><br>
-            <a href='/teams/{{this._id}}'>{{this.city}} {{this.name}}<br>
+            {{this.city}} {{this.name}}<br>
             </a>
         
     </div>
