@@ -247,7 +247,8 @@ const tunes = new Team ({
     city: "Tune Land",
     image: "https://i.imgur.com/M5LNYFA.png",
     players: [mj, bugs, bill, lola, taz],
-    games: [tunesGameOne, tunesGameTwo, tunesGameThree]
+    games: [tunesGameOne, tunesGameTwo, tunesGameThree],
+    description: "After defeating the Monstars, MJ had decided to quit baseball AND the NBA and take on all comers"
 })
 
 
