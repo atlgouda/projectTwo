@@ -1,26 +1,12 @@
 <h1 class="pageTitle">{{player.name}} Basketball Card</h1>
 
 <div class="center" id="cardButtonRow"><a class="button" href='/teams/{{teamId}}/players/{{player._id}}/edit'>Edit Player</a>
-<a class="button" href='/teams/{{teamId}}/players'>Go Back to Roster</a>
-<form action='/teams/{{teamId}}/players/{{player.id}}?_method=DELETE' method='POST'>
+  <a class="button" href='/teams/{{teamId}}/players'>Go Back to Roster</a>
+  <form action='/teams/{{teamId}}/players/{{player.id}}?_method=DELETE' method='POST'>
     <input class="button is-danger" type="submit" value='Delete Player'>
-</form></div>
-
-
-    <div id="playerCard"><img id="cardImage" src="{{player.photoUrl}}">
-        <p id="playerNameText">{{player.name}}</p>
-        <p id="playerPositionText">{{player.position}}</p>
-        {{!-- <p id="ageText">Age: {{player.age}}</p> --}}
-        </div>
-{{!-- </div> --}}
-
-{{!-- <div class="card2">
-  <img src="{{player.photoUrl}}" style="width: 80%">
-  <div class="container">
-    <h4><b>{{player.name}}</b></h4> 
-    <p>{{player.position}}</p> 
-  </div>
-</div> --}}
-
-
-
+  </form>
+</div>
+<div id="playerCard"><img id="cardImage" src="{{player.photoUrl}}">
+  <p id="playerNameText">{{player.name}}</p>
+  <p id="playerPositionText">{{player.position}}</p>
+</div>

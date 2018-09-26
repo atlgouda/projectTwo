@@ -1,12 +1,11 @@
 <h1 class="pageTitle">SHOW ALL GAMES<br>
-<a class="button is-success" href='/teams/{{teamId}}/games/new'>Add New Game</a>
-<a class="button is-success" href='/teams/{{team._id}}'>View League Page</a>
+    <a class="button is-success" href='/teams/{{teamId}}/games/new'>Add New Game</a>
+    <a class="button is-success" href='/teams/{{team._id}}'>View League Page</a>
 </h1>
 <div>
     {{#each games}}
-        <div id="scheduleGames">
-            <a class="button is-link" id="gameDate" href='/teams/{{../teamId}}/games/{{this._id}}'>{{this.date}} vs {{this.opponent}}</a><br>
-          </div>
+    <div id="scheduleGames">
+        <a class="button is-link" id="gameDate" href='/teams/{{../teamId}}/games/{{this._id}}'>{{this.date}} vs {{this.opponent}}</a><br>
+    </div>
     {{/each}}
 </div>
-

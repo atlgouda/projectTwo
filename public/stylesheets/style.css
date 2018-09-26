@@ -13,7 +13,7 @@ body {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction
 }
 .locationImage{
   max-height: 500px;
@@ -76,11 +76,8 @@ body {
 /* New Player Page */
 #newPlayerForms {
   text-align: center;
-  font-size: 20px;
-  /* margin-left: 35%; */
-
+  font-size: 20px
 }
-
 /* New Team Page */
 #newTeamForms {
   margin-left: 15%;
@@ -113,7 +110,6 @@ body {
  flex-wrap: wrap;
  margin-left: 5%;
  margin-right: 5%;
-
 }
 /* One Player */
 #cardButtonRow {
@@ -168,14 +164,6 @@ body {
 .card2 {
   background-color: white;
 }
-/* Roster Page */
-#rosterNames {
-  text-align: center;
-}
-#rosterName {
-  font-size: 30px;
-}
-/* Showing One team */
 #teamImage {
   max-height: 200px;
   display: block;

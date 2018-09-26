@@ -1,11 +1,11 @@
 <h1 class="pageTitle">Edit Team</h1>
 <div id="editTeamForms">
-<form action='/teams/{{team._id}}?_method=PUT' method='POST'>
-    <div>City<input  class="editTeamInput" type='text' name='city' value='{{team.city}}'></div><br>
-    <div>Name<input class="editTeamInput" type='text' name='name' value='{{team.name}}'></div><br>
-    <div>Logo Image URL<input class="editTeamInput" type='text' name='image' value='{{team.image}}'></div><br>
-    <div>Team Description<input class="editTeamInput" type='text' name='description' value='{{team.description}}'></div><br>
-    <div><input class="button is-link" type='submit' value='Update Team'>
-    <a class="button" href='/teams'>CANCEL</a></div>
-</form>
+    <form action='/teams/{{team._id}}?_method=PUT' method='POST'>
+        <div>City<input class="editTeamInput" type='text' name='city' value='{{team.city}}'></div><br>
+        <div>Name<input class="editTeamInput" type='text' name='name' value='{{team.name}}'></div><br>
+        <div>Logo Image URL<input class="editTeamInput" type='text' name='image' value='{{team.image}}'></div><br>
+        <div>Team Description<input class="editTeamInput" type='text' name='description' value='{{team.description}}'></div><br>
+        <div><input class="button is-link" type='submit' value='Update Team'>
+            <a class="button" href='/teams'>CANCEL</a></div>
+    </form>
 </div>

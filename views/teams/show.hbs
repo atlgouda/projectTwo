@@ -1,17 +1,13 @@
 <h1 class="pageTitle">{{team.city}} {{team.name}}</h1>
-
 <div><img class="center" id="teamImage" src="{{team.image}}"> </div><br>
-<div id="teamDescription"<p>{{team.description}}</p></div><br>
-    
-
-
-
-
+<div id="teamDescription" <p>{{team.description}}
+    </p>
+</div><br>
 <div class="center" id="buttonRow"><a class="button" href='/teams/{{team._id}}/edit'>Edit Team</a>
-<a class="button" href='/teams'>League Page</a>
-<a class="button" href='/teams/{{team._id}}/players'>Roster</a>
-<a class="button" href='/teams/{{team._id}}/games'>Schedule</a><br>
-<form action='/teams/{{team._id}}?_method=DELETE' method='POST'>
-    <input class="button is-danger" type="submit" value='Delete Team'>
-</form>
+    <a class="button" href='/teams'>League Page</a>
+    <a class="button" href='/teams/{{team._id}}/players'>Roster</a>
+    <a class="button" href='/teams/{{team._id}}/games'>Schedule</a><br>
+    <form action='/teams/{{team._id}}?_method=DELETE' method='POST'>
+        <input class="button is-danger" type="submit" value='Delete Team'>
+    </form>
 </div>
